@@ -2,7 +2,7 @@
 const express=require('express');
 
 //ustalenie portu serwera
-const port=8000;
+const port=process.env.PORT || 8000;
 //środowisko uruchomieniowe
 const env=process.env.NODE_ENV || 'development'; //jesli nie zdefiniowana przyjmuje wartość development
 
@@ -11,10 +11,9 @@ const app=express();
 //Określenie komunikacji z serwerem przy użyciu json'a
 app.use(express.json());
 
-/*
 //Przykładowe zapytanie GET
 app.get('/',(req,res)=>{
-    //res.send({msg:"Witaj w Świecie REST"})
+    res.send({msg:"Witaj w Świecie REST"})
     res.send(exmpl);
 })
 
@@ -22,15 +21,15 @@ app.get('/',(req,res)=>{
 let exmpl=[];
 
 //Przykładowe zapytanie post cz.2
-app.post('/',(req,res)=>{
+/*app.post('/',(req,res)=>{
     const {smth_1,smth_2}=req.body;
     exmpl.push({smth_1,smth_2});
     //Dodać walidacje
 
     //Zmiana statusu,wysłanie użytkownikowi obiektu celem sprawdzenia działnia
     res.status(201).send({smth_1,smth_2})
-})
-*/
+})*/
+
 
 //Wypisanie informacji o serwerze w terminalu
 app.listen(port,'localhost',()=>{
