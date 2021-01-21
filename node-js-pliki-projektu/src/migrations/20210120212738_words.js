@@ -1,4 +1,4 @@
-//tworzenie bazy, chyba powinnismy miec kolejne migracje w przyszlosci
+//aktualizacja bazy
 exports.up = function(knex) {
     return knex.schema.createTable('words',(table)=>{
         table.increments().primary();
