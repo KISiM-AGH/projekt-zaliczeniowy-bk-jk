@@ -1,6 +1,9 @@
 //Importowanie bibliotek
 const express=require('express');
 
+//importowanie routingu
+const api = require('./src/api')
+
 //ustalenie portu serwera
 const port=process.env.PORT || 8000;
 //środowisko uruchomieniowe
@@ -11,6 +14,8 @@ const app=express();
 //Określenie komunikacji z serwerem przy użyciu json'a
 app.use(express.json());
 
+app.use('/api',api);
+/*
 //Przykładowe zapytanie GET
 app.get('/',(req,res)=>{
     res.send({msg:"Witaj w Świecie REST"})
@@ -21,7 +26,7 @@ app.get('/',(req,res)=>{
 let exmpl=[];
 
 //Przykładowe zapytanie post cz.2
-/*app.post('/',(req,res)=>{
+app.post('/',(req,res)=>{
     const {smth_1,smth_2}=req.body;
     exmpl.push({smth_1,smth_2});
     //Dodać walidacje

@@ -1,5 +1,5 @@
 const path=require('path')
-
+//generalnie knex sluzy do tworzenia zapytan sql i laczenia ich z jsowym kodem
 const config = {
     client: 'mysql',
     connection: {

@@ -9,6 +9,7 @@
     "skrypt_do_debugowania_serwera": "cross-env PORT=8000 nodemon --inspect ."
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cross-env": "^7.0.3",
     "express": "4.17.1",
     "knex": "^0.21.16",
