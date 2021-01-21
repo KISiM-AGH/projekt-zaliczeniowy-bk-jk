@@ -1,38 +1,57 @@
 const {Router} = require('express')
 const Word = require('../../models/wordmodel')
+const asyncHandler = require("../asyncHandler");
 const router= new Router();
 
-//get /api/words
-router.get('/',async(req,res)=>{
+
+//Pobieranie wszytskich słów z bazy- OK
+router.get('/',asyncHandler(async(req,res)=>{
     const word = await Word.query();
-    res.send(word);
-})
-//get /api/words/id
-router.get('/:id',async(req,res)=>{
+    res.status(200).send(word);
+}))
+
+//Pobieranie konkretnego słowa z bazy- NIE
+router.get('/:id',asyncHandler(async(req,res)=>{
     const id = req.params.id;
     const word = await Word.query().findById(id);
     res.send(word);
-})
-//trzeba poprawic
-// post /api/words
-router.post('/',async (req,res)=>{
-    const word = await Word.query().insert({
+}))
+
+
+//Dodawanie nowych słów do bazy- OK
+router.post('/',asyncHandler(async (req,res)=>{
+    const word=await Word.query().insert({
         term: req.body.term,
         numberOfAppearances: req.body.numberOfAppearances,
         numberOfGuesses: req.body.numberOfGuesses
-    })
-    res.send(word);
-})
-//put /api/words/id
-router.put('/:id',async(req,res)=>{
+    });
+    res.status(201).send(word);
+}))
+/* Alternatywna wersja obsługi błedów
+router.post('/',async (req,res)=>{
+    try {//Obsluga zlych danych wprowadzonych przez uzytkownika v1
+        const word = await Word.query().insert({
+            term: req.body.term,
+            numberOfAppearances: req.body.numberOfAppearances,
+            numberOfGuesses: req.body.numberOfGuesses
+        });
+        res.status(201).send(word);
+    }catch(e){
+        res.status(400).send({msg:"Bledne dane!!!"})
+    }
+})*/
+
+//Aktualizacja konkretnego słowa w bazie- NIE
+router.put('/:id',asyncHandler(async(req,res)=>{
     const id = req.params.id;
     const updatedWord = await Word.query().patchAndFetchById(id, req.body)
     res.send(updatedWord);
-})
-//delete /api/words/id
-router.delete('/:id',async(req,res)=>{
-    const {id} = req.params;
+}))
+
+//Usuwanie konkretnego słowa z bazy- NIE
+router.delete('/:id',asyncHandler(async(req,res)=>{
+    const {id} = req.params.id;
     const deletedCount = await Word.query().deleteById(id);
-    res.status(204).end();
-})
+    res.status(204);//.end();
+}))
 module.exports = router;

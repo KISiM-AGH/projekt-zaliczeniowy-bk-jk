@@ -8,11 +8,11 @@ class Word extends BaseModel{
     static get tableName(){
         return 'words';
     }
-    static get jsonSchema(){
+    static get jsonSchema(){ //Sprawdzenie danych od użytkownika
         return{
             type: 'object',
             properties: {
-                //id ma nadawac baza
+                //id nadawane przez baze
                 //id: {type: 'Integer'},
                 term: {type: 'string'},
                 numberOfAppearances: {type: 'integer'},
