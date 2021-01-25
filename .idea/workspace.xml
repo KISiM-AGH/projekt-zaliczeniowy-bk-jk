@@ -31,72 +31,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d67f17-2728-4c76-9121-95762b9f5dda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/migrations/20210124130546_words.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/migrations/20210124131544_words.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projekt-zaliczeniowy-bk-jk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projekt-zaliczeniowy-bk-jk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/wordnotfoundexception.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middlewares/dberrorhandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knexfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/knexfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/atob.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/atob.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/cross-env-shell.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/cross-env-shell.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/cross-env.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/cross-env.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/is-ci.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/is-ci.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/knex.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/knex.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mime.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nodemon.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nodemon.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nodetouch.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nodetouch.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nopt.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nopt.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rc.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rc.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/which.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/which.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/yarn.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/yarn.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/yarnpkg.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/yarnpkg.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/LICENCE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/LICENCE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/doc/API.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/doc/API.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/color-name/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/component-emitter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-emitter/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/node-which.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/node-which.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/knex/scripts/measure.bat" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/knex/scripts/measure.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/package-json/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/package-json/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url/resolve-url.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url/resolve-url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url/test/resolve-url.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url/test/resolve-url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/semver-diff/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver-diff/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/urix/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/urix/.jshintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/urix/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/urix/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/urix/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/urix/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/urix/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/urix/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yarn/lib/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/yarn/lib/cli.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/asyncHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/asyncHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/words/wordscontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/words/wordscontroller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/errorHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20210120212738_words.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20210120212738_words.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/basemodel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/basemodel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/wordmodel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/wordmodel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,22 +147,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1611233329561" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1611585188627">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1611610667911">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1611585188627" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1611585188626">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1611610667911" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1611610667911">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1611585188626" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1611585188626">
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1611610667911" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1611610667911">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1611585188626" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1611585188627">
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1611610667911" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1611610667911">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1611585188627" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1611610667911" />
     <state x="521" y="178" key="SettingsEditor" timestamp="1611233147081">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
