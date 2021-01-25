@@ -4,6 +4,7 @@ const express=require('express');
 //importowanie routingu
 const api = require('./src/api')
 const errorHandler = require("./src/middlewares/errorHandler");
+const DbErrorHandler = require("./src/middlewares/dberrorhandler");
 
 //ustalenie portu serwera
 const port=process.env.PORT || 8000;
@@ -16,7 +17,9 @@ const app=express();
 app.use(express.json());
 
 app.use('/api',api); //Wczytuje routing z katalogu ./src/api
+app.use(DbErrorHandler);
 app.use(errorHandler) //Wykorzystanie funkcji errorHandler w programie
+
 
 
 //Wypisanie informacji o serwerze w terminalu
