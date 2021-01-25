@@ -1,6 +1,7 @@
 const {Router} = require('express')
 const Word = require('../../models/wordmodel')
 const asyncHandler = require("../asyncHandler");
+const Wordnotfoundexception = require("../../exceptions/wordnotfoundexception");
 const router= new Router();
 
 
@@ -13,7 +14,12 @@ router.get('/all',asyncHandler(async(req,res)=>{
 //Pobieranie konkretnego słowa z bazy- OK
 router.get('/',asyncHandler(async(req,res)=>{
     const word = await Word.query().select().from('words').where("term",req.body.term.toString());
-    res.send(word[0]);
+    if(!word[0])    {
+        throw new Wordnotfoundexception();
+    }
+    else{
+            res.status(200).send(word[0]);
+        }
 }))
 
 
@@ -47,10 +53,17 @@ router.put('/:id',asyncHandler(async(req,res)=>{
     res.send(updatedWord);
 }))
 
-//Usuwanie konkretnego słowa z bazy- NIE
-router.delete('/:id',asyncHandler(async(req,res)=>{
-    const {id} = req.params.id;
-    const deletedCount = await Word.query().deleteById(id);
-    res.status(204);//.end();
+//Usuwanie konkretnego słowa z bazy- OK
+router.delete('/',asyncHandler(async(req,res)=>{
+    const word = await Word.query().select().from('words').where("term",req.body.term.toString());
+    if(!word[0]){
+        throw new Wordnotfoundexception();
+    }
+    else{
+        const deletedCount = await Word.query().deleteById(word[0].id);
+        res.status(204).end();
+    }
+
 }))
+
 module.exports = router;
