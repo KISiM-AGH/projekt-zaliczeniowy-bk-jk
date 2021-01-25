@@ -2,6 +2,7 @@ const {Router} = require('express')
 const Word = require('../../models/wordmodel')
 const asyncHandler = require("../asyncHandler");
 const Wordnotfoundexception = require("../../exceptions/wordnotfoundexception");
+const WordNotFoundException = require("../../exceptions/wordnotfoundexception");
 const router= new Router();
 
 
@@ -15,7 +16,7 @@ router.get('/all',asyncHandler(async(req,res)=>{
 router.get('/',asyncHandler(async(req,res)=>{
     const word = await Word.query().select().from('words').where("term",req.body.term.toString());
     if(!word[0])    {
-        throw new Wordnotfoundexception();
+        throw new WordNotFoundException();
     }
     else{
             res.status(200).send(word[0]);
@@ -57,7 +58,7 @@ router.put('/:id',asyncHandler(async(req,res)=>{
 router.delete('/',asyncHandler(async(req,res)=>{
     const word = await Word.query().select().from('words').where("term",req.body.term.toString());
     if(!word[0]){
-        throw new Wordnotfoundexception();
+        throw new WordNotFoundException();
     }
     else{
         const deletedCount = await Word.query().deleteById(word[0].id);
