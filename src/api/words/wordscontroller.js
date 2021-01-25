@@ -47,11 +47,13 @@ router.post('/',async (req,res)=>{
     }
 })*/
 
-//Aktualizacja konkretnego słowa w bazie- NIE
+//Aktualizacja konkretnego słowa w bazie w oparciu o ID
+//da się zmieniać wszystkie pola tabeli
 router.put('/:id',asyncHandler(async(req,res)=>{
-    const id = req.params.id;
-    const updatedWord = await Word.query().patchAndFetchById(id, req.body)
-    res.send(updatedWord);
+    const id= req.params.id;
+    const updatedWord=await Word.query().patchAndFetchById(id,req.body);
+    if(!updatedWord) throw new WordNotFoundException();
+    res.status(200).send(updatedWord);
 }))
 
 //Usuwanie konkretnego słowa z bazy- OK
