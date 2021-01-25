@@ -1,7 +1,6 @@
 const {Model} = require ('objection')
 const knex = require('../knex')
 const BaseModel = require('./basemodel');
-//nazwa pliku do zmiany(base.model?)
 Model.knex(knex);
 
 class Word extends BaseModel{
@@ -12,9 +11,8 @@ class Word extends BaseModel{
         return{
             type: 'object',
             properties: {
-                //id nadawane przez baze
-                //id: {type: 'Integer'},
-                term: {type: 'string'},
+                //id: {type: 'Integer'}, //nadawane przez baze
+                term: {type: 'String'},
                 numberOfAppearances: {type: 'integer'},
                 numberOfGuesses: {type: 'integer'}
                 //pozycje odgadnietych i nieodgadnietych liter,licba mozliwych pomylek

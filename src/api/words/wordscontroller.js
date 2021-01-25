@@ -5,16 +5,15 @@ const router= new Router();
 
 
 //Pobieranie wszytskich słów z bazy- OK
-router.get('/',asyncHandler(async(req,res)=>{
+router.get('/all',asyncHandler(async(req,res)=>{
     const word = await Word.query();
     res.status(200).send(word);
 }))
 
-//Pobieranie konkretnego słowa z bazy- NIE
-router.get('/:id',asyncHandler(async(req,res)=>{
-    const id = req.params.id;
-    const word = await Word.query().findById(id);
-    res.send(word);
+//Pobieranie konkretnego słowa z bazy- OK
+router.get('/',asyncHandler(async(req,res)=>{
+    const word = await Word.query().select().from('words').where("term",req.body.term.toString());
+    res.send(word[0]);
 }))
 
 
