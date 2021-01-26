@@ -22,7 +22,17 @@ router.get('/',asyncHandler(async(req,res)=>{
             res.status(200).send(word[0]);
         }
 }))
-
+//Zwrocenie losowego slowa
+router.get('/random',asyncHandler(async(req,res)=>{
+    const word= await Word.query().select().from("words");
+    const random = Math.floor(Math.random() * word.length);
+    if(!word[0]){
+        throw new WordNotFoundException();
+    }
+    else{
+        res.status(200).send(word[random]);
+    }
+}))
 //Dodawanie nowych słów do bazy- OK
 router.post('/',asyncHandler(async (req,res)=>{
     const word=await Word.query().insert({
