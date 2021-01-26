@@ -15,7 +15,6 @@ router.get('/all',asyncHandler(async(req,res)=>{
 //Pobieranie konkretnego słowa z bazy- OK
 router.get('/',asyncHandler(async(req,res)=>{
     const word = await Word.query().select().from('words').where("term",req.body.term.toString());
-    res.send(word[0]);
     if(!word[0]){
         throw new WordNotFoundException();
     }
@@ -29,7 +28,9 @@ router.post('/',asyncHandler(async (req,res)=>{
     const word=await Word.query().insert({
         term: req.body.term,
         numberOfAppearances: req.body.numberOfAppearances,
-        numberOfGuesses: req.body.numberOfGuesses
+        numberOfGuesses: req.body.numberOfGuesses,
+        maxNumberOfMistakes: req.body.maxNumberOfMistakes,
+        lengthOfTerm: req.body.term.toString().length
     });
     res.status(201).send(word);
 }))
@@ -45,7 +46,9 @@ router.put('/:term',asyncHandler(async(req,res)=>{
     const updatedWord=await wordToUpdate.$query().patchAndFetch({
         term: req.body.term,
         numberOfAppearances: req.body.numberOfAppearances,
-        numberOfGuesses: req.body.numberOfGuesses});
+        numberOfGuesses: req.body.numberOfGuesses,
+        maxNumberOfMistakes: req.body.maxNumberOfMistakes,
+        lengthOfTerm: req.body.term.toString().length})
     res.status(200).send(updatedWord);//ew 204
 }))
 

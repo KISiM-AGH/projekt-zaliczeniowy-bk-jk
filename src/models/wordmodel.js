@@ -14,7 +14,9 @@ class Word extends BaseModel{
                 //id: {type: 'Integer'}, //nadawane przez baze
                 term: {type: 'String'},
                 numberOfAppearances: {type: 'integer'},
-                numberOfGuesses: {type: 'integer'}
+                numberOfGuesses: {type: 'integer'},
+                maxNumberOfMistakes: {type: 'integer'},
+                lengthOfTerm: {type: 'integer'}
                 //pozycje odgadnietych i nieodgadnietych liter,licba mozliwych pomylek
             }
         }
