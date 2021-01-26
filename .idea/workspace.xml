@@ -30,10 +30,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d67f17-2728-4c76-9121-95762b9f5dda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/words/wordscontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/words/wordscontroller.js" afterDir="false" />
-    </list>
+    <list default="true" id="84d67f17-2728-4c76-9121-95762b9f5dda" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
