@@ -5,7 +5,7 @@ Projekt autorstwa Jakuba Kopcia && Bartosza Kozłowskiego<br/><br/>
 
 Celem projektu jest stworzenie komunikacji między klientem a serwerem dla gry przeglądarkowej Wisielec w oparciu o architektekture REST.<br/><br/>
 
-Wykorzystane technologie to język Node.js ,baza danych w MySQL (zaimplementowana w aplikacji XAMPP), knex (do tworzenia zapytań w SQL), express (do uruchomienia serwera),objection.js (ORM dla Node.js).<br/><br/>
+Wykorzystane technologie to język Node.js ,baza danych w MySQL, knex (do tworzenia zapytań w SQL), express (do uruchomienia serwera),objection.js (ORM dla Node.js).<br/><br/>
 
 W projekcie zrealizowane zostały cztery podstawowe żądania protokołu HTTP:<br/>
 1.GET- zrealizowano został w trzech wariantach:<br/>
